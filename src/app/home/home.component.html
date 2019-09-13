@@ -1,0 +1,12 @@
+<p>
+  home works!
+</p>
+<div>
+  <form [formGroup]="formData" (ngSubmit)="printData(formData.value)">
+    Name: <input type="text" placeholder="Enter Name" name="name" formControlName="name" autofocus><br>
+    Gender: <input type="text" placeholder="Enter Gender" name="gender" formControlName="gender"> <br>
+    Age: <input type="number" placeholder="Enter Age" name="age" formControlName="age" ><br>
+    <input type="submit" value="Submit" [disabled]="!formData.valid">
+  </form>
+
+</div>

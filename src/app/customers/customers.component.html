@@ -1,0 +1,23 @@
+<p>
+  customers works!
+</p>
+<div>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Amount</th>
+      <th>Create Time</th>
+      <th>Update Time</th>
+    </tr>
+    <tr *ngFor="let customer of customers">
+      <th>{{customer.id}}</th>
+      <th>{{customer.name}}</th>
+      <th>{{customer.amount}}</th>
+      <th>{{customer.timeCreate | date:'medium'}}</th>
+      <th>{{customer.timeUpdate | date:'medium'}}</th>
+    </tr>
+
+  </table>
+
+</div>

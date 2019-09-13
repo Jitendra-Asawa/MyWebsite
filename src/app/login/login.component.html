@@ -1,0 +1,10 @@
+<div>
+    <form [formGroup]="formData" (ngSubmit)="loginClick(formData.value)">
+      <input type="email" name="email" placeholder="Email-id" formControlName="email" autofocus><br>
+      <input type="password" name="password" placeholder="Password" formControlName="password"><br>
+      <!-- <a routerLink=""> -->
+        <input type="submit" value="Login" [disabled]="!formData.valid">
+      <!-- </a> -->
+    </form>
+    <button (click)="forgotPassword()">Forgot Password</button>
+</div> 
